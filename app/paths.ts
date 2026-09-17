@@ -1,4 +1,4 @@
-// Internal links use the root of the eventual custom domain.
+// The final site uses the root of the custom domain.
 const basePath = '';
 
 export function sitePath(path: string) {
