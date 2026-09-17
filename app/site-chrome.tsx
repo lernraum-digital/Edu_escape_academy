@@ -6,7 +6,7 @@ export function SiteHeader() {
       <div className="top-rule" />
       <header className="site-header page-shell">
         <a className="brand" href={sitePath('/')} aria-label="Edu Escape Academy – Startseite">
-          <img src="/assets/brand/logo.png" alt="Edu Escape Academy" />
+          <img src="./assets/brand/logo.png" alt="Edu Escape Academy" />
         </a>
         <nav aria-label="Hauptnavigation">
           <a href={sitePath('/unterrichtsmaterialien')}>Unterrichtsmaterialien</a>

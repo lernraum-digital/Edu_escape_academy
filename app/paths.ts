@@ -2,5 +2,5 @@
 const basePath = '';
 
 export function sitePath(path: string) {
-  return `${basePath}${path}`;
+  return path === '/' ? './' : `.${path}`;
 }

@@ -3,9 +3,9 @@ import { SiteFooter, SiteHeader } from './site-chrome';
 import { sitePath } from './paths';
 
 const categories = [
-  { title: 'Escape Rooms', image: '/assets/categories/escape-rooms-elegant.png', href: sitePath('/unterrichtsmaterialien#escape-rooms') },
-  { title: 'Spiele für zwischendurch', image: '/assets/categories/spiele-elegant.png', href: sitePath('/unterrichtsmaterialien#spiele') },
-  { title: 'Lesespurgeschichten', image: '/assets/categories/lesespuren-elegant.png', href: sitePath('/unterrichtsmaterialien#lesespuren') },
+  { title: 'Escape Rooms', image: './assets/categories/escape-rooms-elegant.png', href: sitePath('/unterrichtsmaterialien#escape-rooms') },
+  { title: 'Spiele für zwischendurch', image: './assets/categories/spiele-elegant.png', href: sitePath('/unterrichtsmaterialien#spiele') },
+  { title: 'Lesespurgeschichten', image: './assets/categories/lesespuren-elegant.png', href: sitePath('/unterrichtsmaterialien#lesespuren') },
 ];
 
 export default function Home() {
@@ -68,7 +68,7 @@ export default function Home() {
         </section>
 
         <section id="kostenlos" className="feature anchor-offset" aria-labelledby="freebie-title">
-          <div className="feature-image quickstart-image"><img src="/assets/products/quickstart.png" alt="Cover: Dein Genially Quickstart" /></div>
+          <div className="feature-image quickstart-image"><img src="./assets/products/quickstart.png" alt="Cover: Dein Genially Quickstart" /></div>
           <div className="feature-copy">
             <p className="eyebrow">Kostenlos für dich</p>
             <h2 id="freebie-title">Dein Genially-Quickstart</h2>
@@ -78,7 +78,7 @@ export default function Home() {
         </section>
 
         <section className="about-strip" aria-labelledby="about-title">
-          <img src="/assets/portrait.png" alt="Melanie von Edu Escape Academy" />
+          <img src="./assets/portrait.png" alt="Melanie von Edu Escape Academy" />
           <div>
             <h2 id="about-title">Hi, ich bin Melanie.</h2>
             <p>Ich entwickle digitale Lernabenteuer und unterstütze Lehrkräfte dabei, eigene interaktive Materialien zu gestalten.</p>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Edu Escape Academy',
   description:
     'Digitale Escape Rooms, Spiele, Lesespurgeschichten und Genially-Angebote für Lehrkräfte.',
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: './favicon.svg' },
 };
 
 export default function RootLayout({
