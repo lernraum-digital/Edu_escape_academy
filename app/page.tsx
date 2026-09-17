@@ -1,10 +1,11 @@
 import { featuredProducts } from './content';
 import { SiteFooter, SiteHeader } from './site-chrome';
+import { sitePath } from './paths';
 
 const categories = [
-  { title: 'Escape Rooms', image: '/assets/categories/escape-rooms-elegant.png', href: '/unterrichtsmaterialien#escape-rooms' },
-  { title: 'Spiele für zwischendurch', image: '/assets/categories/spiele-elegant.png', href: '/unterrichtsmaterialien#spiele' },
-  { title: 'Lesespurgeschichten', image: '/assets/categories/lesespuren-elegant.png', href: '/unterrichtsmaterialien#lesespuren' },
+  { title: 'Escape Rooms', image: '/assets/categories/escape-rooms-elegant.png', href: sitePath('/unterrichtsmaterialien#escape-rooms') },
+  { title: 'Spiele für zwischendurch', image: '/assets/categories/spiele-elegant.png', href: sitePath('/unterrichtsmaterialien#spiele') },
+  { title: 'Lesespurgeschichten', image: '/assets/categories/lesespuren-elegant.png', href: sitePath('/unterrichtsmaterialien#lesespuren') },
 ];
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
                   <h3>{offer.title}</h3>
                   <p>{offer.description}</p>
                   {offer.level && <p className="offer-level">{offer.level}</p>}
-                  {offer.status === 'Halloween' ? <a className="text-link" href="/unterrichtsmaterialien#escape-rooms">Mehr erfahren <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
+                  {offer.status === 'Halloween' ? <a className="text-link" href={sitePath('/unterrichtsmaterialien#escape-rooms')}>Mehr erfahren <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
                 </div>
               </article>
             ))}
@@ -61,8 +62,8 @@ export default function Home() {
             <p>Gestalte mit Genially eigene interaktive Materialien – mit Workshops und Vorlagen zum Befüllen.</p>
           </div>
           <div className="creator-links">
-            <a className="button button-primary" href="/selbst-gestalten#workshops">Workshops entdecken →</a>
-            <a className="button button-secondary" href="/selbst-gestalten#vorlagen">Vorlagen entdecken →</a>
+            <a className="button button-primary" href={sitePath('/selbst-gestalten#workshops')}>Workshops entdecken →</a>
+            <a className="button button-secondary" href={sitePath('/selbst-gestalten#vorlagen')}>Vorlagen entdecken →</a>
           </div>
         </section>
 

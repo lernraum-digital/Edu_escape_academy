@@ -1,15 +1,17 @@
+import { sitePath } from './paths';
+
 export function SiteHeader() {
   return (
     <>
       <div className="top-rule" />
       <header className="site-header page-shell">
-        <a className="brand" href="/" aria-label="Edu Escape Academy – Startseite">
+        <a className="brand" href={sitePath('/')} aria-label="Edu Escape Academy – Startseite">
           <img src="/assets/brand/logo.png" alt="Edu Escape Academy" />
         </a>
         <nav aria-label="Hauptnavigation">
-          <a href="/unterrichtsmaterialien">Unterrichtsmaterialien</a>
-          <a href="/selbst-gestalten">Selbst gestalten</a>
-          <a href="/#kostenlos">Kostenlos</a>
+          <a href={sitePath('/unterrichtsmaterialien')}>Unterrichtsmaterialien</a>
+          <a href={sitePath('/selbst-gestalten')}>Selbst gestalten</a>
+          <a href={sitePath('/#kostenlos')}>Kostenlos</a>
         </nav>
       </header>
     </>
@@ -24,8 +26,8 @@ export function SiteFooter() {
         <nav aria-label="Rechtliches und Kontakt">
           <a href="mailto:escape_academy@tobias.eu">Kontakt</a>
           <a href="#">Instagram</a>
-          <a href="/impressum">Impressum</a>
-          <a href="/datenschutz">Datenschutz</a>
+          <a href={sitePath('/impressum')}>Impressum</a>
+          <a href={sitePath('/datenschutz')}>Datenschutz</a>
         </nav>
       </div>
     </footer>
