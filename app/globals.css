@@ -160,9 +160,9 @@ footer { background: var(--cream-light); border-top: 1px solid var(--line); }
   .category-card { grid-template-columns: 42% 1fr; }
   .category-label { padding: 14px 16px; }
   .category-label h3 { font-size: 1.05rem; }
-  .feature { grid-template-columns: minmax(0, 34%) 1fr; }
-  .quickstart-image { min-height: 0; padding: 12px; }
-  .quickstart-image img { max-height: 220px; }
+  .feature { grid-template-columns: 1fr; }
+  .quickstart-image { min-height: 0; padding: 18px; }
+  .quickstart-image img { width: min(100%, 230px); max-height: 230px; }
   .feature-copy { padding: 22px 18px; }
   .feature-copy h2 { font-size: 1.72rem; }
   .feature-copy > p:not(.eyebrow) { margin-bottom: 18px; font-size: 1rem; }
