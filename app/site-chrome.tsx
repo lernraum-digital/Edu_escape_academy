@@ -38,8 +38,13 @@ export function ProductCard({
   product: import('./content').Product;
 }) {
   return (
-    <article className="catalog-card">
-      <div className="catalog-image"><img src={product.image} alt="" /></div>
+    <article className={`catalog-card${product.mobileImage ? ' catalog-card-portrait' : ''}`}>
+      <div className="catalog-image">
+        <picture>
+          {product.mobileImage && <source media="(max-width: 560px)" srcSet={product.mobileImage} />}
+          <img src={product.image} alt="" />
+        </picture>
+      </div>
       <div className="catalog-content">
         {product.status && <span className="catalog-status">{product.status}</span>}
         <h3>{product.title}</h3>
