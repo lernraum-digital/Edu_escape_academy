@@ -150,8 +150,11 @@ footer { background: var(--cream-light); border-top: 1px solid var(--line); }
   h2 { font-size: 2rem; }
   .button-row, .creator-links { display: grid; grid-template-columns: 1fr; }
   .button { width: 100%; }
-  .offer-card { display: flex; }
-  .offer-image-wrap { aspect-ratio: 4 / 3; min-height: 0; }
+  .offer-card { grid-template-columns: minmax(0, 38%) 1fr; }
+  .offer-image-wrap { min-height: 150px; }
+  .offer-content { padding: 16px; }
+  .offer-content h3 { font-size: 1.16rem; }
+  .offer-content > p:not(.status) { margin-bottom: 14px; }
   .category-grid { grid-template-columns: 1fr; }
   .category-card { grid-template-columns: 42% 1fr; }
   .category-label { padding: 14px 16px; }
