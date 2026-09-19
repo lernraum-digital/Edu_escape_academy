@@ -40,7 +40,7 @@ export default function Home() {
                   <h3>{offer.title}</h3>
                   <p>{offer.description}</p>
                   {offer.level && <p className="offer-level">{offer.level}</p>}
-                  {offer.status === 'Halloween' ? <a className="text-link" href={sitePath('/unterrichtsmaterialien#escape-rooms')}>Mehr erfahren <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
+                  {offer.shopUrl ? <a className="text-link" href={offer.shopUrl} target="_blank" rel="noreferrer">Zum Angebot <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
                 </div>
               </article>
             ))}
