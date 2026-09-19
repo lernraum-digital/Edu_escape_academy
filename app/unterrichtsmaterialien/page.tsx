@@ -29,7 +29,9 @@ export default function MaterialsPage() {
         </section>
 
         {sections.map((section) => {
-          const sectionProducts = products.filter((product) => product.category === section.category);
+          const sectionProducts = products
+            .filter((product) => product.category === section.category)
+            .sort((first, second) => (first.catalogOrder ?? Number.MAX_SAFE_INTEGER) - (second.catalogOrder ?? Number.MAX_SAFE_INTEGER));
           return (
             <section className="catalog-section" id={section.id} key={section.id}>
               <h2>{section.title}</h2>
