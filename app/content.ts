@@ -26,7 +26,7 @@ export const products: Product[] = [
   { title: 'Blackwood Manor 2 – Spiel mit dem Leben', description: 'Eigenständig spielbare Geschichte im Blackwood-Setting', level: 'Klassen 6/7–13', image: './assets/products/blackwood-2.png', category: 'lesespuren', shopUrl: 'https://eduescapeacademy.thrivecart.com/blackwood-zwei/?ref=landingpage' },
   { title: 'Die Blackwood-Abenteuer', description: 'Beide Lesespurgeschichten im Bundle', level: 'Klassen 6/7–13', image: './assets/products/blackwood-bundle.png', category: 'lesespuren', shopUrl: 'https://eduescapeacademy.thrivecart.com/blackwood-collection/?ref=landingpage' },
   { title: 'Die verschwundene Maske von Akehn', description: 'Vorlage mit fertiger Spielmechanik für eigene Unterrichtsinhalte', image: './assets/products/maske-akehn.png', category: 'vorlagen', shopUrl: 'https://eduescapeacademy.thrivecart.com/verschwundene-maske/?ref=landingpage' },
-  { title: 'Genially-Grundlagen-Workshop: Dein Adventskalender', description: 'Genially kennenlernen und einen eigenen digitalen Adventskalender gestalten', image: './assets/products/adventskalender.png', category: 'workshops', status: 'Demnächst', featured: true },
+  { title: 'Grundlagen-Workshop: Dein Adventskalender mit Genially', description: 'Genially kennenlernen und einen eigenen digitalen Adventskalender gestalten', image: './assets/products/adventskalender.png', category: 'workshops', status: 'Demnächst', featured: true },
 ];
 
 export const featuredProducts = products.filter((product) => product.featured);
