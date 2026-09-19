@@ -30,7 +30,10 @@ export default function Home() {
             {featuredProducts.map((offer) => (
               <article className="offer-card" key={offer.title}>
                 <div className="offer-image-wrap">
-                  <img src={offer.image} alt="" />
+                  <picture>
+                    {offer.mobileImage && <source media="(max-width: 560px)" srcSet={offer.mobileImage} />}
+                    <img src={offer.image} alt="" />
+                  </picture>
                   <span className="badge">{offer.status ?? 'Aktuell'}</span>
                 </div>
                 <div className="offer-content">
