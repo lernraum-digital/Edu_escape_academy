@@ -23,9 +23,7 @@ export function SiteFooter() {
     <footer>
       <div className="page-shell footer-inner">
         <span>Edu Escape Academy</span>
-        <nav aria-label="Rechtliches und Kontakt">
-          <a href="mailto:escape_academy@tobias.eu">Kontakt</a>
-          <a href="#">Instagram</a>
+        <nav aria-label="Rechtliches">
           <a href={sitePath('/impressum')}>Impressum</a>
           <a href={sitePath('/datenschutz')}>Datenschutz</a>
         </nav>

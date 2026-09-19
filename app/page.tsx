@@ -4,8 +4,8 @@ import { sitePath } from './paths';
 
 const categories = [
   { title: 'Escape Rooms', image: './assets/categories/escape-rooms-elegant.png', href: sitePath('/unterrichtsmaterialien#escape-rooms') },
-  { title: 'Spiele für zwischendurch', image: './assets/categories/spiele-elegant.png', href: sitePath('/unterrichtsmaterialien#spiele') },
-  { title: 'Lesespurgeschichten', image: './assets/categories/lesespuren-elegant.png', href: sitePath('/unterrichtsmaterialien#lesespuren') },
+  { title: 'Spiele-Sets', image: './assets/categories/spiele-elegant.png', href: sitePath('/unterrichtsmaterialien#spiele') },
+  { title: 'Interaktive Leseförderung', image: './assets/categories/lesespuren-elegant.png', href: sitePath('/unterrichtsmaterialien#lesespuren') },
 ];
 
 export default function Home() {
