@@ -16,7 +16,7 @@ export default function Home() {
       <div id="top" className="page-shell page-flow">
         <section className="hero" aria-labelledby="hero-title">
           <p className="eyebrow">Edu Escape Academy</p>
-          <h1 id="hero-title">Unterricht, der neugierig macht.</h1>
+          <h1 id="hero-title">Unterricht, der sich nicht nach Arbeitsblatt anfühlt.</h1>
           <p className="hero-copy">Digitale Escape Rooms, Spiele und Lesespurgeschichten für deinen Unterricht. Workshops und Vorlagen für deine eigenen interaktiven Ideen.</p>
           <div className="button-row">
             <a className="button button-primary" href="#materialien">Material entdecken <span aria-hidden="true">→</span></a>

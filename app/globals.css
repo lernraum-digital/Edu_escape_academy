@@ -148,7 +148,7 @@ footer { background: var(--cream-light); border-top: 1px solid var(--line); }
   .page-shell { width: min(100% - 24px, 500px); }
   .page-flow { gap: 38px; padding-bottom: 48px; }
   .hero { padding: 24px 18px; }
-  h1 { font-size: clamp(2rem, 10vw, 2.7rem); }
+  h1 { font-size: clamp(1.9rem, 9.2vw, 2.55rem); }
   h2 { font-size: 2rem; }
   .button-row, .creator-links { display: grid; grid-template-columns: 1fr; }
   .button { width: 100%; }
