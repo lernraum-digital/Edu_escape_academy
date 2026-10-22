@@ -27,7 +27,7 @@ export default function CreatePage() {
 
         <section className="catalog-section" id="workshops">
           <h2>Workshops</h2>
-          <p className="section-intro">Die Workshop-Angebote werden aktuell überarbeitet. Der Adventskalender macht den Anfang.</p>
+          <p className="section-intro">Starte mit den Genially-Grundlagen und gestalte deinen eigenen interaktiven Adventskalender.</p>
           <div className="catalog-grid compact-grid">
             {workshops.map((product) => <ProductCard product={product} key={product.title} />)}
           </div>
