@@ -159,6 +159,7 @@ footer { background: var(--cream-light); border-top: 1px solid var(--line); }
   .offer-content > p:not(.status) { margin-bottom: 14px; }
   .offer-image-wrap { aspect-ratio: 2 / 3; min-height: 0; align-self: start; }
   .offer-image-wrap img { object-fit: cover; padding: 0; }
+  .offer-image-wrap .badge { right: 6px; bottom: 6px; max-width: calc(100% - 12px); padding: 4px 6px; font-size: 0.7rem; line-height: 1.15; text-align: center; }
   .category-grid { grid-template-columns: 1fr; }
   .category-card { grid-template-columns: 42% 1fr; }
   .category-label { padding: 14px 16px; }
