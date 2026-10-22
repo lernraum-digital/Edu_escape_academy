@@ -2,6 +2,7 @@ export type Product = {
   title: string;
   description: string;
   image: string;
+  featuredImage?: string;
   mobileImage?: string;
   catalogOrder?: number;
   category: 'escape' | 'spiele' | 'lesespuren' | 'vorlagen' | 'workshops';
@@ -28,7 +29,7 @@ export const products: Product[] = [
   { title: 'Blackwood Manor 2 – Spiel mit dem Leben', description: 'Eigenständig spielbare Geschichte im Blackwood-Setting', level: 'Klassen 6/7–13', image: './assets/products/blackwood-2.png', category: 'lesespuren', shopUrl: 'https://eduescapeacademy.thrivecart.com/blackwood-zwei/?ref=landingpage' },
   { title: 'Die Blackwood-Abenteuer', description: 'Beide Lesespurgeschichten im Bundle', level: 'Klassen 6/7–13', image: './assets/products/blackwood-bundle.png', category: 'lesespuren', shopUrl: 'https://eduescapeacademy.thrivecart.com/blackwood-collection/?ref=landingpage' },
   { title: 'Die verschwundene Maske von Akehn', description: 'Vorlage mit fertiger Spielmechanik für eigene Unterrichtsinhalte', image: './assets/products/maske-akehn.png', category: 'vorlagen', shopUrl: 'https://eduescapeacademy.thrivecart.com/verschwundene-maske/?ref=landingpage' },
-  { title: 'Genially Basics Xmas Edition', description: 'Dein interaktiver Adventskalender mit Wow-Faktor', image: './assets/products/genially-basics-xmas.png', mobileImage: './assets/products/genially-basics-xmas-mobile.png', category: 'workshops', status: 'Ab sofort verfügbar', featured: true, shopUrl: 'https://eduescapeacademy.thrivecart.com/workshop-basics-xmas/?ref=landingpage' },
+  { title: 'Genially Basics Xmas Edition', description: 'Dein interaktiver Adventskalender mit Wow-Faktor', image: './assets/products/genially-basics-xmas-portrait.png', featuredImage: './assets/products/genially-basics-xmas.png', category: 'workshops', status: 'Ab sofort verfügbar', featured: true, shopUrl: 'https://eduescapeacademy.thrivecart.com/workshop-basics-xmas/?ref=landingpage' },
 ];
 
 export const featuredProducts = products.filter((product) => product.featured);

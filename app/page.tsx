@@ -28,11 +28,11 @@ export default function Home() {
           <h2 id="aktuelles-title">Aktuelles</h2>
           <div className="offer-grid">
             {featuredProducts.map((offer) => (
-              <article className="offer-card" key={offer.title}>
+              <article className={`offer-card${offer.category === 'workshops' ? ' offer-card-workshop' : ''}`} key={offer.title}>
                 <div className="offer-image-wrap">
                   <picture>
                     {offer.mobileImage && <source media="(max-width: 560px)" srcSet={offer.mobileImage} />}
-                    <img src={offer.image} alt="" />
+                    <img src={offer.featuredImage ?? offer.image} alt="" />
                   </picture>
                   <span className="badge">{offer.status ?? 'Aktuell'}</span>
                 </div>

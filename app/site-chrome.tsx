@@ -38,7 +38,7 @@ export function ProductCard({
   product: import('./content').Product;
 }) {
   return (
-    <article className={`catalog-card${product.mobileImage ? ' catalog-card-portrait' : ''}`}>
+    <article className={`catalog-card${product.mobileImage || product.category === 'workshops' ? ' catalog-card-portrait' : ''}${product.category === 'workshops' ? ' catalog-card-workshop' : ''}`}>
       <div className="catalog-image">
         <picture>
           {product.mobileImage && <source media="(max-width: 560px)" srcSet={product.mobileImage} />}
