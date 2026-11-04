@@ -1,4 +1,4 @@
-import { featuredProducts } from './content';
+import { featuredProducts, productActionLabel } from './content';
 import { SiteFooter, SiteHeader } from './site-chrome';
 import { sitePath } from './paths';
 
@@ -40,7 +40,7 @@ export default function Home() {
                   <h3>{offer.title}</h3>
                   <p>{offer.description}</p>
                   {offer.level && <p className="offer-level">{offer.level}</p>}
-                  {offer.shopUrl ? <a className="text-link" href={offer.shopUrl} target="_blank" rel="noreferrer">Zum Angebot <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
+                  {offer.shopUrl ? <a className="text-link" href={offer.shopUrl} target="_blank" rel="noreferrer">{productActionLabel[offer.category]} <span aria-hidden="true">→</span></a> : <p className="status">{offer.status === 'Demnächst' ? 'Bald verfügbar' : offer.status}</p>}
                 </div>
               </article>
             ))}

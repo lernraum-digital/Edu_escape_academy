@@ -12,6 +12,14 @@ export type Product = {
   shopUrl?: string;
 };
 
+export const productActionLabel: Record<Product['category'], string> = {
+  escape: 'Escape Room entdecken',
+  spiele: 'Spiele-Set entdecken',
+  lesespuren: 'Lesespuren entdecken',
+  vorlagen: 'Vorlage entdecken',
+  workshops: 'Workshop entdecken',
+};
+
 // Alle wechselnden Angebote liegen hier an einer Stelle. Shoplinks werden ergänzt,
 // sobald die endgültigen Zielseiten gesammelt und geprüft sind.
 export const products: Product[] = [

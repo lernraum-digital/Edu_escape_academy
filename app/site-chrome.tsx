@@ -1,3 +1,4 @@
+import { productActionLabel } from './content';
 import { sitePath } from './paths';
 
 export function SiteHeader() {
@@ -51,7 +52,7 @@ export function ProductCard({
         <p>{product.description}</p>
         {product.level && <p className="product-level">{product.level}</p>}
         {product.shopUrl ? (
-          <a className="text-link" href={product.shopUrl} target="_blank" rel="noreferrer">Zum Angebot →</a>
+          <a className="text-link" href={product.shopUrl} target="_blank" rel="noreferrer">{productActionLabel[product.category]} →</a>
         ) : (
           <span className="link-placeholder">Link folgt</span>
         )}
